@@ -2,6 +2,7 @@ import Img1 from "../../assets/image/women.png";
 import Img2 from "../../assets/image/women2-wroTMLvf.jpg";
 import Img3 from "../../assets/image/shirt3-HwQ10bVo.png";
 import Img4 from "../../assets/image/women4-zXERyOhD.jpg";
+import Img5 from "../../assets/image/women.png";
 import { FaStar } from "react-icons/fa6";
 
 const ProductsData = [
@@ -37,14 +38,14 @@ const ProductsData = [
         color: "yellow",
         aosDelay: "600"
     },
-    // {
-    //     id: 5,
-    //     img: Img5,
-    //     title: "Fashion T-Shirt",
-    //     rating: 4.7,
-    //     color: "pink",
-    //     aosDelay: "800"
-    // },
+    {
+        id: 5,
+        img: Img5,
+        title: "Fashion T-Shirt",
+        rating: 4.6,
+        color: "pink",
+        aosDelay: "800"
+    },
 ]
 
 const Products = () => {
@@ -52,10 +53,10 @@ const Products = () => {
         <div className="mt-14 mb-12">
             <div className="container">
                 {/* Header section */}
-                <div className="text-center mb-10 max-w-[600px]">
-                    <p className="text-sm text-primary">Top Selling Products for you</p>
-                    <h1 className="text-3xl font-bold">Products</h1>
-                    <p className="text-xs text-gray-400">
+                <div className="text-center mb-10 max-w-[600px] mx-auto">
+                    <p data-aos="fade-up" className="text-sm text-primary">Top Selling Products for you</p>
+                    <h1 data-aos="fade-up" className="text-3xl font-bold">Products</h1>
+                    <p data-aos="fade-up" className="text-xs text-gray-400">
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum alias nihil corrupti ratione cupiditate explicabo placeat natus? Aperiam, deserunt unde!
                     </p>
                 </div>
@@ -65,7 +66,11 @@ const Products = () => {
                         {/* card section */}
                         {
                             ProductsData.map((data) => (
-                                <div key={data.id} className="space-y-3">
+                                <div
+                                    data-aos="fade-up"
+                                    data-aos-delay={data.aosDelay}
+                                    key={data.id}
+                                    className="space-y-3">
                                     <img src={data.img} alt=""
                                         className="h-[220px] w-[150px] object-cover rounded-md"
                                     />
