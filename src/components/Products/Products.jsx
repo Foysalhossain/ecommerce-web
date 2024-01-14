@@ -1,6 +1,6 @@
 import Img1 from "../../assets/image/women.png";
 import Img2 from "../../assets/image/women2-wroTMLvf.jpg";
-import Img3 from "../../assets/image/shirt3-HwQ10bVo.png";
+import Img3 from "../../assets/image/shirt2.png";
 import Img4 from "../../assets/image/women4-zXERyOhD.jpg";
 import Img5 from "../../assets/image/women.png";
 import { FaStar } from "react-icons/fa6";
